@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  margin-top: 0.5vh;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Boogaloo', cursive;
+}
+
+body {
+  overflow: hidden;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.player > img {
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  background-color: rgba(26, 25, 25, 0.9);
+  padding: 1rem;
+  border-radius: 15%;
+  padding-top: 3vh;
+  transform: translateY(5%);
+  width: 30vw;
+}
+
+.details_img > .music_cover{
+  
+  height: 50%;
+  width: 50%;
+  margin-top: 3vh;
+
+}
+
+.container > h4 {
+  color: white;
+  margin: 1vh;
+}
+
+.details_title {
+  color: white;
+  margin-top: 1vh;
+  font-size: 1.8rem;
+}
+
+.details_artist {
+  color: rgb(207, 207, 207);
+  font-size: 1.2rem;
+}
+
+.container > p {
+  color: white;
+}
+
+.nextSong_info {
+  color: rgb(207, 207, 207);
+}
+
+.control {
+  display: flex;
+  margin: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.control > .control_PlayButton {
+  margin: 0 3vw;
+  padding: 4vh;
+  border-radius: 50%;
+  background-color: rgb(207, 207, 207);
+  border: none;
+  cursor: pointer;
+}
+
+.control > .control_PlayButton:hover {
+  background-color: rgb(196, 196, 1);
+  color: white;
+}
+
+.control > .control_SkipBtn {
+  border: none;
+  background-color: rgba(26, 25, 25, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.control > .control_SkipBtn:hover {
+  color: rgb(196, 196, 1);
+}
+
+
+audio {
+  opacity: 0.5;
+  margin-bottom: 2vh;
+  cursor:none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+  border-radius: 5%;
+}
+
+audio::-webkit-media-controls-play-button {
+  -webkit-appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAMAAAD3Y3VMAAAAGFBMVEXqgWTqgWTqgWTqgWTqgWTqgWTqgWTqgWSqmnHoAAAAB3RSTlMAAQOQkaipUd1d4wAAADBJREFUeAFjYGBgZGSAAUZmZkY4k50dxmFiY6eIw8QKZLMwkspkYGSBMKEcGBPZzQCV0AGPVdxMxgAAAABJRU5ErkJggg==) 50% 50% no-repeat;
+}
+
